@@ -5,23 +5,23 @@
 
 ## Table of Contents
 
-1. [Fundamental Architecture](#fundamental-architecture)
-2. [Core Language Elements](#core-language-elements)
-3. [Special Language Constructs](#special-language-constructs)
-4. [Input/Output and Built-in Functions](#inputoutput-and-built-in-functions)
-5. [Advanced Techniques](#advanced-techniques)
-6. [Optimization Techniques](#optimization-techniques)
-7. [Common Patterns and Idioms](#common-patterns-and-idioms)
-8. [Debugging Techniques](#debugging-techniques)
-9. [Common Errors and Solutions](#common-errors-and-solutions)
-10. [Example Programs Explained](#example-programs-explained)
-11. [Templates and Capabilities](#templates-and-capabilities)
-12. [Secret Techniques](#secret-techniques)
-13. [Implementation Details](#implementation-details)
-14. [Context Interaction Model](#context-interaction-model)
-15. [Advanced Quantum Operations](#advanced-quantum-operations)
-16. [External System Integration](#external-system-integration)
-17. [Final Notes](#final-notes)
+1. [Fundamental Architecture]
+2. [Core Language Elements]
+3. [Special Language Constructs]
+4. [Input/Output and Built-in Functions]
+5. [Advanced Techniques]
+6. [Optimization Techniques]
+7. [Common Patterns and Idioms]
+8. [Debugging Techniques]
+9. [Common Errors and Solutions]
+10. [Example Programs Explained]
+11. [Templates and Capabilities]
+12. [Secret Techniques]
+13. [Implementation Details]
+14. [Context Interaction Model]
+15. [Advanced Quantum Operations]
+16. [External System Integration]
+17. [Final Notes]
 
 ---
 
