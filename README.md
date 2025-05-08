@@ -26,7 +26,7 @@
 
 ## Warning: Extreme Difficulty
 
-Ego is specifically designed to be one of the most difficult programming languages to master. It uses familiar syntax elements but combines them with complex execution mechanics that will challenge even experienced programmers.
+Ego was specifically designed to be one of the most difficult programming languages to master. It uses familiar syntax elements but combines them with complex execution mechanics that will challenge even experienced programmers.
 
 "The most difficult part isn't understanding what you wrote, but predicting what it will do." - *Ego Design Philosophy*
 
