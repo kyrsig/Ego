@@ -58,14 +58,51 @@ Ego was developed as a direct response to this challenge. Rather than following 
 
 Where Malbolge achieves its difficulty through obscurity, Ego achieves comparable difficulty through complexity. This makes Ego a true challenger to Malbolge's status as the most difficult programming language, but with a crucial difference: skilled programmers can, with significant effort, learn to write Ego programs intentionally.
 
-## Key Features
+## Key Capabilities
 
-- **Quantum Variables**: Variables exist in superposition states across contexts
-- **Context Interference**: Operations create ripple patterns affecting nearby code
-- **Enhanced Synchronization**: Code blocks only execute when precise conditions align
-- **Context Shifting**: Execution contexts periodically swap roles
-- **Variable Entanglement**: Changes to one variable affect others in complex ways
-- **Phase Alignment**: Critical operations require contexts to be in phase
+- Triple Context Execution
+Ego runs every line of code in three simultaneous contexts:
+
+- Primary Context: What the code literally says
+- Shadow Context: Background operations that influence execution
+- Meta Context: How code modifies itself during execution
+
+Quantum Variable System
+- Variables exist in superposition across contexts:
+
+Different values in each context
+- Uncertainty that increases with observation
+- Entanglement relationships between variables
+- Collapse during synchronization operations
+
+Transformation System
+- Code modifies its own behavior through explicit rules:
+
+- Transform operations based on patterns
+- Create self-modifying but deterministic programs
+- Chain transformations for complex behavior
+- Control application through phase alignment
+
+Interference Patterns
+- Operations create wave-like effects throughout code:
+- Constructive and destructive interference
+- Spatial distribution of computational effects
+- Wave interaction between operations
+- Resonance for amplified effects
+
+Phase Alignment
+- Contexts contain independent phase counters:
+- Synchronization requires specific phase relationships
+- Critical operations enabled by phase alignment
+- Complex timing patterns across execution contexts
+- Phase management for reliable operation
+
+Context Shifting
+- Execution contexts rotate roles during execution:
+- Primary becomes shadow, shadow becomes meta, meta becomes primary
+- Creates temporal dependencies across program execution
+- Transforms program behavior at precise intervals
+- Enables multi-phase algorithms
 
 ## Code Examples
 
