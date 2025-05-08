@@ -22,6 +22,7 @@
 ![Difficulty: Extreme](https://img.shields.io/badge/Difficulty-Extreme-red.svg)
 ![Status: Experimental](https://img.shields.io/badge/Status-Experimental-yellow.svg)
 ![Status: Experimental](https://img.shields.io/badge/Version-0.0.0-black.svg)
+![Static Badge](https://img.shields.io/badge/Malbolge%20Competitor)
 
 **Ego**: A challenging yet comprehensible esoteric programming language designed to rival Malbolge in difficulty while maintaining readable syntax.
 
