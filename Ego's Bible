@@ -7063,5 +7063,6 @@ moveWave(origin, direction)        // Move wave pattern
 scaleWave(origin, factor)          // Scale wave amplitude
 rotateWave(origin, angle)
 
+With everything listed and documented you are now able to code in Ego.
 
 "The most difficult part isn't understanding what you wrote, but predicting what it will do." - *Ego Design Philosophy*
