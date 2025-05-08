@@ -1,0 +1,222 @@
+# Getting Started with Ego
+
+This guide will help you take your first steps with the Ego programming language. Ego presents a unique challenge—it uses familiar syntax but operates in three simultaneous execution contexts, creating a programming experience unlike any other.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (v12.0.0 or higher)
+- npm (v6.0.0 or higher)
+
+### Installation Steps
+
+```bash
+# Install from npm
+npm install -g ego-lang
+
+# Verify installation
+ego --version
+```
+
+Alternatively, you can clone the repository:
+
+```bash
+git clone https://github.com/yourusername/ego-lang.git
+cd ego-lang
+npm install
+npm link
+```
+
+## Using the Web Compiler
+
+The simplest way to try Ego is through the web compiler:
+
+1. Visit [https://yourusername.github.io/ego-lang/](https://yourusername.github.io/ego-lang/)
+2. Select an example from the dropdown or write your own code
+3. Click "Run Program" to execute
+4. Observe the output and context visualization
+
+The web compiler includes a context viewer that helps visualize what's happening across the primary, shadow, and meta contexts.
+
+## Your First Ego Program
+
+Let's start with a simplified "Hello, World!" program:
+
+```ego
+function main() {
+    display("Hello, World!");
+}
+```
+
+Save this to a file named `hello.ego` and run it:
+
+```bash
+ego run hello.ego
+```
+
+This should display `Hello, World!` in the console.
+
+At first glance, this looks like a standard program. However, even this simple example executes in three contexts simultaneously. Let's explore what that means with a slightly more complex example.
+
+## Understanding the Triple Context
+
+Here's a program that demonstrates Ego's triple context execution:
+
+```ego
+function main() {
+    var x = 5;
+    display("Primary value: " + x);
+    display("Shadow value: " + shadowOf(x));
+    display("Meta value: " + metaOf(x));
+}
+```
+
+Save this as `contexts.ego` and run it:
+
+```bash
+ego run contexts.ego
+```
+
+The output will show different values for each context:
+- Primary value: 5 (the assigned value)
+- Shadow value: 22 (calculated as (5*3+7)%100)
+- Meta value: 5 (calculated as floor(sqrt(5*7))%10)
+
+This demonstrates that even standard variables exist simultaneously in all three contexts, with different values in each.
+
+## Adding Quantum Variables
+
+Quantum variables enhance the triple context behavior:
+
+```ego
+function main() {
+    quantum var q = 5;
+    display("Primary value: " + q);
+    display("Shadow value: " + shadowOf(q));
+    display("Meta value: " + metaOf(q));
+    
+    // Access increases uncertainty
+    display("After access:");
+    display("Primary value: " + q);
+    display("Shadow value: " + shadowOf(q));
+    display("Meta value: " + metaOf(q));
+}
+```
+
+Save this as `quantum.ego` and run it:
+
+```bash
+ego run quantum.ego
+```
+
+You'll notice that the values may change after access, demonstrating the uncertainty principle in quantum variables.
+
+## Synchronization Blocks
+
+Synchronization blocks allow controlled interaction between contexts:
+
+```ego
+function main() {
+    var a = 10;
+    var b = 3;
+    
+    // This block only executes when (a * b) % 7 == 0
+    sync(a, b) {
+        display("Values synchronized!");
+        display("a: " + a + ", b: " + b);
+    }
+    
+    // Change values to satisfy sync condition
+    a = 7;
+    b = 4;
+    
+    sync(a, b) {
+        display("Now values synchronized!");
+        display("a: " + a + ", b: " + b);
+    }
+}
+```
+
+Save this as `sync.ego` and run it:
+
+```bash
+ego run sync.ego
+```
+
+Only the second sync block should execute because 7 * 4 = 28, and 28 % 7 = 0.
+
+## Transformation Rules
+
+Transformation rules modify how code behaves:
+
+```ego
+function main() {
+    var x = 5;
+    var y = 10;
+    
+    display("Before transformation: x = " + x);
+    
+    // Transform assignment operations on x
+    transform x by [assignment] to y;
+    
+    x = 20;  // This is influenced by the transformation
+    
+    display("After transformation: x = " + x);
+}
+```
+
+Save this as `transform.ego` and run it:
+
+```bash
+ego run transform.ego
+```
+
+The output will show that the assignment to `x` has been influenced by `y`.
+
+## Interference Patterns
+
+Interference patterns create wave-like effects:
+
+```ego
+function main() {
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    
+    display("Before interference:");
+    display("a: " + a + ", b: " + b + ", c: " + c);
+    
+    // Create interference pattern
+    interfere wave(5, 10, 15);
+    
+    a = a + 1;
+    b = b + 1;
+    c = c + 1;
+    
+    display("After interference:");
+    display("a: " + a + ", b: " + b + ", c: " + c);
+}
+```
+
+Save this as `interference.ego` and run it:
+
+```bash
+ego run interference.ego
+```
+
+The interference pattern will affect how the variables change, potentially resulting in values different than simple addition would predict.
+
+## Next Steps
+
+After working through these examples, you've experienced the fundamental aspects of Ego programming. To deepen your understanding:
+
+1. Study the provided examples in the `examples/` directory
+2. Experiment with combining multiple features
+3. Read the Ego's Bible for comprehensive documentation
+4. Try implementing simple algorithms (sorting, searching, etc.)
+5. Explore the visualization tools to better understand context interactions
+
+Remember, Ego is designed to be challenging. Even experienced programmers will need time to develop intuition for how the three contexts interact. Perseverance and experimentation are key to mastery.
+
+For more detailed information, refer to the comprehensive Ego's Bible documentation.
