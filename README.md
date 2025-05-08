@@ -81,10 +81,10 @@ Transformation System
 - Transform operations based on patterns
 - Create self-modifying but deterministic programs
 - Chain transformations for complex behavior
-- Control application through phase alignment
+- Control the application through phase alignment
 
 Interference Patterns
-- Operations create wave-like effects throughout code:
+- Operations create wave-like effects throughout the code:
 - Constructive and destructive interference
 - Spatial distribution of computational effects
 - Wave interaction between operations
