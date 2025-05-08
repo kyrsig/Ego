@@ -222,49 +222,7 @@ function main() {
 }
 ```
 
-## Try It Online
 
-You can try Ego right in your browser using our web compiler:
-
-[Launch Ego Web Compiler](https://yourusername.github.io/ego-lang/)
-
-The web compiler provides:
-- Code editor with example programs
-- Output display
-- Triple context visualization
-- Phase alignment indicators
-- Success verification
-
-## Getting Started
-
-### Using the Web Compiler
-
-1. Visit the [Ego Web Compiler](https://yourusername.github.io/ego-lang/)
-2. Select an example or write your own code
-3. Click "Run Program"
-4. Watch the three contexts interact
-5. Check for success indicators
-
-### Running Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/ego-lang.git
-cd ego-lang
-
-# Open the web compiler locally
-open index.html   # or double-click the file
-```
-
-## Documentation
-
-- [Language Specification](docs/specification.md) - Detailed explanation of language features
-- [User Guide](docs/guide.md) - Tutorials and programming patterns
-- [Technical Architecture](docs/technical.md) - How the interpreter works
-
-## Contributing
-
-Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to help develop Ego further.
 
 ## The Purpose of Ego
 
